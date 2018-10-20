@@ -98,14 +98,14 @@ gitment:
     owner: hosseinmoghaddam
     repo: blog-comments
     oauth:
-        client_id: df41dca979c28f7ad9f0
-        client_secret: f14c09355503f8e2ec97e1c660fde23211aa8686
+        client_id: 0a00412c3c5ed8ba1245
+        client_secret: f80c6c62624917a3c993afc2a56c9822e4614755
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: hosseinmoghaddam
     repo: blog-comments
-    clientID: df41dca979c28f7ad9f0
-    clientSecret: f14c09355503f8e2ec97e1c660fde23211aa8686
+    clientID: 0a00412c3c5ed8ba1245
+    clientSecret: f80c6c62624917a3c993afc2a56c9822e4614755
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
