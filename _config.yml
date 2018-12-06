@@ -28,6 +28,10 @@ email: hosseinghmoghadam@gmail.com
 navs:
   -
     href: /
+    label: رزومه
+
+  -
+    href: /home
     label: خانه
 
   -
@@ -114,7 +118,7 @@ lazy_load_disqus : false
 # ---------------- #
 simple_jekyll_search:
     # 是否支持全文搜索
-    fulltext: false
+    fulltext: true
     # 最多显示多少条搜索结果
     limit: 10
 

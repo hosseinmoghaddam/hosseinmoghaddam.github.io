@@ -1,99 +1,1402 @@
----
-layout: default
-class: home
-css: ['pages/index.css']
-comments: false
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="Trimatrix Lab">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 
-<section class="banner">
-    <div class="collection-head">
-         <div class="container">
-            <div class="collection-title">
-              <h1 class="collection-header" id="sub-title"><span>{{ site.subtitle }}</span></h1>
-                <div class="collection-info">
-                    <span class="meta-info mobile-hidden">
-                        <span class="octicon octicon-location"></span>
-                        {{ site.location }}
-                    </span>
-                     <span class="meta-info">
-                        <span class="octicon octicon-mark-github"></span>
-                        <a href="https://github.com/{{ site.github_username }}" target="_blank">{{ site.github_username }}</a>
-                    </span>
+
+    <title>حسین مقدم | رزومه</title>
+    <link rel="icon" href="assets/images/fav-icon.png">
+
+    <!--APPLE TOUCH ICON-->
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+
+    <!-- GOOGLE FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+
+
+    <!-- MATERIAL ICON FONT -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link href="assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/v4-shims.css">
+
+    <link href="http://trimatrixlab.com/store/flatrica/stylesheets/vendors/magnific-popup.css" rel="stylesheet">
+
+
+    <!-- ANIMATION -->
+    <link href="assets/stylesheets/animate.min.css" rel="stylesheet">
+
+
+    <!-- MATERIALIZE -->
+    <link href="assets/stylesheets/materialize.css" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="assets/stylesheets/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- CUSTOM STYLE -->
+    <link href="assets/stylesheets/style_dark_dark.css" id="switch_style" rel="stylesheet">
+    <link href="assets/stylesheets/persian.css" rel="stylesheet">
+
+</head>
+<body class>
+
+
+<!--==========================================
+                  PRE-LOADER
+===========================================-->
+<div id="loading">
+    <div id="loading-center">
+        <div id="loading-center-absolute">
+            <div class="box-holder animated bounceInDown">
+                <span class="load-box"><span class="box-inner"></span></span>
+            </div>
+            <!-- NAME & STATUS -->
+            <div class="text-holder text-center">
+                <h2>حسین مقدم</h2>
+                <h6>مهندس نرم افزار و توسعه دهنده وب</h6>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==========================================
+                    HEADER
+===========================================-->
+<header id="home">
+    <nav id="theMenu" class="menu">
+
+        <!--MENU-->
+        <div id="menu-options" class="menu-wrap" style="direction: rtl;text-align: right">
+
+            <!--PERSONAL LOGO-->
+            <div class="logo-flat">
+                <img alt="personal-logo" class="img-responsive" src="assets/images/john.png">
+            </div>
+            <br>
+
+            <!--OPTIONS-->
+            <a href="#home"><i class="title-icon fa fa-user"></i>خانه</a>
+            <a href="#about"><i class="title-icon fa fa-dashboard"></i>درباره</a>
+            <a href="#education"><i class="title-icon fa fa-graduation-cap"></i>تحصیلات</a>
+            <a href="#skills"><i class="title-icon fa fa-sliders"></i>مهارت ها</a>
+            <a href="#experience"><i class="title-icon fa fa-suitcase"></i>تجارب</a>
+            <a href="#portfolios"><i class="title-icon fa fa-archive"></i>نمونه کارها</a>
+            <a href="#interest"><i class="title-icon fa fa-heart"></i>علاقه ها</a>
+            <a href="#blog"><i class="title-icon fa fa-pencil-square"></i>بلاگ</a>
+            <a href="#contact"><i class="title-icon fa fa-envelope"></i>تماس</a>
+        </div>
+
+        <!-- MENU BUTTON -->
+        <div id="menuToggle">
+            <div class="toggle-normal">
+                <i class="material-icons top-bar">remove</i>
+                <i class="material-icons middle-bar">remove</i>
+                <i class="material-icons bottom-bar">remove</i>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="header-background section"  id="particles-js">
+        <div id="v-card-holder">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+
+                        <!-- V-CARD -->
+                        <div id="v-card" class="card" style="-moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;">
+
+                            <!-- PROFILE PICTURE -->
+                            <div id="profile" class="right">
+                                <img alt="profile-image" class="img-responsive" src="assets/images/profile.png">
+                                <div class="slant"></div>
+                                <div id="button-holder" class="btn-holder">
+                                    <div id="play-btn" class="btn-floating btn-large btn-play">
+                                        <i id="icon-play" class="material-icons" style="display: inline-block;">play_arrow</i></div>
+                                </div>
+                            </div>
+
+                            <!--VIDEO CLOSE BUTTON-->
+                            <div id="close-btn" class="btn-floating icon-close">
+                                <i class="fa fa-close"></i>
+                            </div>
+
+                            <div class="card-content">
+
+                                <!-- NAME & STATUS -->
+                                <div class="info-headings">
+                                    <h4 class="text-uppercase left">  من  <span style="
+    color: #06a763;
+" id="typed4"></span></h4>
+                                    <h6 class="text-capitalize left">مهندس نرم افزار و توسعه دهنده وب</h6>
+                                </div>
+
+                                <!-- CONTACT INFO -->
+                                <div class="infos">
+                                    <ul class="profile-list">
+                                        <li class="clearfix">
+                                            <span class="title"><i class="material-icons">place</i></span>
+                                            <span class="content">ایران , کرج</span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="title"><i class="fab fa-telegram-plane"></i></span>
+                                            <span class="content"><a href="https://t.me/ho33ein_moghadam">@ho33ein_moghadam</a></span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="title"><i class="material-icons">language</i></span>
+                                            <span class="content"><a href="https://hossein-moghadam.ir">hossein-moghadam.ir</a></span>
+                                        </li>
+                                        <li class="clearfix">
+                                            <span class="title"><i class="material-icons">email</i></span>
+                                            <span class="content"><a href="mailto:hosseinghmoghadam@gmail.com">hosseinghmoghadam@gmail.com</a></span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!--LINKS-->
+                                <div class="links">
+                                    <!-- TWITTER-->
+                                    <a target="_blank" href="https://twitter.com/Hossein_ghM" class="social  btn-floating blue"><i
+                                            class="fa fa-twitter"></i></a>
+                                    <!-- INSTAGRAM-->
+                                    <a target="_blank" href="https://instagram.com/hosseinghmoghadam/" class="social  btn-floating pink darken-1"><i
+                                            class="fa fa-instagram"></i></a>
+                                    <!-- LINKEDIN-->
+                                    <a target="_blank" href="https://www.linkedin.com/in/hossein-moghadam-405621119/" class="social  btn-floating blue darken-3"><i
+                                            class="fa fa-linkedin"></i></a>
+                                    <!-- RSS-->
+                                    <a href="#" class="social  btn-floating orange darken-3"><i
+                                            class="fa fa-rss"></i></a>
+                                </div>
+                            </div>
+
+                            <!--HTML 5 VIDEO-->
+                            <video id="html-video" class="video hidden" poster="assets/images/poster/poster.jpg" controls="">
+                                <!--SERVER HOSTED VIDEO-->
+                                <source src="assets/a.webm" type="video/webm">
+                                <source src="assets/b.mp4" type="video/mp4">
+                            </video>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--==========================================
+                   ABOUT
+===========================================-->
+<div id="about" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- DETAILS -->
+                <div id="about-card" class="card">
+                    <div class="card-content">
+                        <!-- ABOUT PARAGRAPH -->
+                        <p style="direction: rtl; text-align: right">
+                            سلام من حسین مقدم هستم ! توسعه دهنده وب با حدود سه سال تجربه من backend کار هستم و بیشتر با php و فریمورک laravel کار کردم.البته که برای سرگرمی سراغ زبان هایی مثل python و java هم رفتم با این که هیچ تعصبی روی هیچ کدوم ندارم اما برای حرفه ای شدن باید یکی رو انتخاب می کردم که  اون هم php بود. من از برنامه نویسی و حل مسئله لذت می برم و تمام امیدم به آینده هم بخاطر همین هست.
+                        </p>
+                    </div>
+
+                    <!-- BUTTONS -->
+                    <div id="about-btn" class="card-action">
+                        <div class="about-btn">
+                            <!-- DOWNLOAD CV BUTTON -->
+                            <a href="#" class="btn waves-effect" style="font-family: Samim">دانلود رزومه</a>
+                            <!-- CONTACT BUTTON -->
+                            <a href="#contact" class="btn waves-effect" style="font-family: Samim">تماس بامن</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==========================================
+                   EDUCATION
+===========================================-->
+<section id="education" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-graduation-cap"></i>تحصیلات</h4>
+        </div>
+
+        <div id="timeline-education">
+
+            <!-- FIRST TIMELINE -->
+            <div class="timeline-block">
+                <!-- DOT -->
+                <div class="timeline-dot"><i class="fas fa-school"></i></div>
+                <!-- TIMELINE CONTENT -->
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <!-- TIMELINE TITLE -->
+                        <h6 class="timeline-title">دیپلم ریاضی</h6>
+                        <!-- TIMELINE TITLE INFO -->
+                        <div class="timeline-info">
+                            <h6>
+                                <small>شهید مطهری تهران و امام حسین کرج</small>
+                            </h6>
+                            <h6>
+                                <small>مهر ۸۸ - خرداد ۹۲</small>
+                            </h6>
+                        </div>
+                        <!-- TIMELINE PARAGRAPH -->
+                        <p>
+                            در دبیرستان رشته ریاضی فیزیک رو انتخاب کردم و از ریاضی هم لذت می بردم معمولا درسم خوب بود و درآخر هم بامعدل ۱۷.۶۴ دیپلم گرفتم
+                        </p>
+                        <!-- BUTTON TRIGGER MODAL -->
+                        <!--       <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
+                                   <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                               </a>-->
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECOND TIMELINE -->
+            <div class="timeline-block">
+                <!-- DOT -->
+                <div class="timeline-dot"><i class="fas fa-school"></i></div>
+                <!-- TIMELINE CONTENT -->
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <!-- TIMELINE TITLE -->
+                        <h6 class="timeline-title">پیش دانشگاهی</h6>
+                        <!--TIMELINE TITLE INFO-->
+                        <div class="timeline-info">
+                            <h6>
+                                <small>شهید میره ای</small>
+                            </h6>
+                            <h6>
+                                <small>مهر ۹۲ - خرداد ۹۳</small>
+                            </h6>
+                        </div>
+                        <!-- TIMELINE PARAGRAPH -->
+                        <p>
+                            دوره پیش دانشگاهی بعد از دیپلم و قبل از دانشگاه هست که این مقطع رو با معدل ۱۸.۳۸ تموم کردم
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THIRD TIMELINE -->
+            <div class="timeline-block">
+                <!-- DOT -->
+                <div class="timeline-dot"><i class="fas fa-university"></i></div>
+                <!-- TIMELINE CONTENT -->
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <!-- TIMELINE TITLE -->
+                        <h6 class="timeline-title">کارشناسی کامپیوتر- نرم افزار</h6>
+                        <!-- TIMELINE TITLE INFO -->
+                        <div class="timeline-info">
+                            <h6>
+                                <small>دانشگاه بزرگمهر قاین</small>
+                            </h6>
+                            <h6>
+                                <small>مهر ۹۳ - خرداد ۹۷</small>
+                            </h6>
+                        </div>
+                        <!-- TIMELINE PARAGRAPH -->
+                        <p>
+                            مقطع کارشناسی رو دانشگاه بزرگمهر قبول شدم و این مقطع جزئی از خاطره انگیزترین بخش های زندگیم هست. توی دانشگاه با این که کسی زیاد به معدل بالا گرفتن توجه نمی کنه اما سعی کردم معدل خوبی داشته باشم و با معدل ۱۶.۹۶ این دوره را به پایان رسوندم
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- FIFTH TIMELINE -->
+
+            <div class="timeline-block">
+                <!-- DOT -->
+                <div class="timeline-dot"><i class="fa fa-globe"></i></div>
+                <!-- TIMELINE CONTENT -->
+                <div class="card timeline-content">
+                    <div class="card-content">
+                        <!-- TIMELINE TITLE -->
+                        <h6 class="timeline-title">زندگی</h6>
+                        <!-- TIMELINE TITLE INFO -->
+                        <div class="timeline-info">
+                            <h6>
+                                <small>دنیا</small>
+                            </h6>
+                            <h6>
+                                <small></small>
+                            </h6>
+                        </div>
+                        <!-- TIMELINE PARAGRAPH -->
+                        <p>
+                            شاید زندگی مقطع تحصیلی خیلی مهمی هست که توی هیج رزومه ای جای نداره اما واقعا هست جایی که بیشترین چیزا رو بهمون یاد داده چیزایی مثل مهربانی ٫ شاد بودن و شجاعت
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!--MODAL ONE-->
+<div class="modal fade" id="myModal-12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-12">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--MODAL HEADER-->
+            <div class="modal-header  text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel-12">دانشگاه بزرگمهر قائنات</h4>
+                <h6>
+                    <small>مهر ۹۳ - خرداد ۹۴</small>
+                </h6>
+            </div>
+            <!--MODAL BODY-->
+            <div class="modal-body">
+                <p style="direction: rtl; text-align: right">                            با تمام سختی ها و دوری ها دانشگاه لذت بخش بود اما نه تا اون موقعی که خودمو پیدا نکرده بودم و از همه مهم تر پیدا کردن دوستای عالی واقعا اگه رفیق هایی به اون خوبی نداشتم احتمالا دوران دانشگاه خیلی سخت می گذشت مثل دبیرستان توی دانشگاه هم خوب بودم اما نه به اون خوبی</p>
+            </div>
+            <!--MODAL FOOTER-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">خروج</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--==========================================
+                   SKILLS
+===========================================-->
+<section id="skills" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-sliders"></i>مهارت ها</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div id="skills-card" class="card">
+                    <div class="card-content">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <!-- FIRST SKILL SECTION -->
+                                <div class="skills-title">
+                                    <h6 class="text-center">حرفه ای</h6>
+                                </div>
+                                <!-- FOURTH SKILL BAR  -->
+                                <div class="skillbar" data-percent="70%">
+                                    <div class="skillbar-title"><span>PHP</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">70%</div>
+                                </div>
+                                <div class="skillbar" data-percent="75%">
+                                    <div class="skillbar-title"><span>Laravel</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">75%</div>
+                                </div>
+                                <!-- SECOND SKILL BAR  -->
+                                <div class="skillbar" data-percent="80%">
+                                    <div class="skillbar-title"><span>HTML5</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">80%</div>
+                                </div>
+                                <!-- THIRD SKILL BAR  -->
+                                <div class="skillbar" data-percent="60%">
+                                    <div class="skillbar-title"><span>CSS3</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">60%</div>
+                                </div>
+                                <!-- FOURTH SKILL BAR  -->
+                                <div class="skillbar" data-percent="55%">
+                                    <div class="skillbar-title"><span>jQuery</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">55%</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <!-- SECOND SKILL SECTION -->
+                                <div class="skills-title">
+                                    <h6 class="text-center">شخصی</h6>
+                                </div>
+
+                                <div class="skillbar" data-percent="50%">
+                                    <div class="skillbar-title"><span>زبان انگلیسی</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+
+                                <!-- FIRST SKILL BAR -->
+                                <div class="skillbar" data-percent="60%">
+                                    <div class="skillbar-title"><span>ارتباطات</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">60%</div>
+                                </div>
+                                <!-- SECOND SKILL BAR  -->
+                                <div class="skillbar" data-percent="70%">
+                                    <div class="skillbar-title"><span>کار تیمی</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">70%</div>
+                                </div>
+                                <!-- THIRD SKILL BAR  -->
+                                <div class="skillbar" data-percent="60%">
+                                    <div class="skillbar-title"><span>خلاقیت</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">60%</div>
+                                </div>
+                                <!-- FOURTH SKILL BAR  -->
+                                <div class="skillbar" data-percent="80%">
+                                    <div class="skillbar-title"><span>فداکاری</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">80%</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <!-- THIRD SKILL SECTION -->
+                                <div class="skills-title">
+                                    <h6 class="text-center">نرم افزار</h6>
+                                </div>
+                                <!-- FIRST SKILL BAR -->
+                                <div class="skillbar" data-percent="80%">
+                                    <div class="skillbar-title"><span>PHP Storm</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">80%</div>
+                                </div>
+                                <!-- SECOND SKILL BAR  -->
+                                <div class="skillbar" data-percent="70%">
+                                    <div class="skillbar-title"><span>Google Chrome</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">70%</div>
+                                </div>
+                                <!-- THIRD SKILL BAR  -->
+                                <div class="skillbar" data-percent="50%">
+                                    <div class="skillbar-title"><span>Adobe Photoshop</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">50%</div>
+                                </div>
+                                <!-- FOURTH SKILL BAR  -->
+                                <div class="skillbar" data-percent="80%">
+                                    <div class="skillbar-title"><span>Dev Console</span></div>
+                                    <div class="skillbar-bar"></div>
+                                    <div class="skill-bar-percent">80%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- /.banner -->
-<section class="container content">
-    <div class="columns">
-        <div class="column two-thirds" >
-            <ol class="repo-list">
-                {% for post in paginator.posts %}
-                <li class="repo-list-item">
-                    <h3 class="repo-list-name">
-                      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                    </h3>
-                    <p class="repo-list-description">
-                        {{ post.excerpt | strip_html | strip }}
-                    </p>
-                    <p class="repo-list-meta">
-                        <span class="meta-info">
-                          <span class="octicon octicon-calendar"></span> <time id="{{ post.url }}"></time>
-                        </span>
-                        {% for cat in post.categories %}
-                        <span class="meta-info">
-                          <span class="octicon octicon-file-directory"></span>
-                          <a href="{{ site.url }}/categories/#{{ cat }}" title="{{ cat }}">{{ cat }}</a>
-                        </span>
-                        {% endfor %}
-                    </p>
-                </li>
-                <script>
-                    var date = '{{post.date}}'
-                    moment.loadPersian(true);
-                    var jalaliDate = moment(date, 'YYYY-M-D HH:mm:ss TZD').format('jD jMMMM jYYYY');
-                    document.getElementById("{{ post.url }}").innerText = jalaliDate
-                </script>
-                {% endfor %}
-            </ol>
+
+
+<!--==========================================
+                   EXPERIENCE
+===========================================-->
+<section id="experience" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-suitcase"></i>تجارب</h4>
         </div>
-        <div class="column one-third">
-            {% include sidebar-search.html %}
-            {% include sidebar-qrcode.html %}
-            {% include sidebar-popular-repo.html %}
+
+        <div id="timeline-experience">
+
+            <!-- FIRST TIMELINE -->
+            <div class="timeline-block">
+                <!-- DOT -->
+                <div class="timeline-dot"><i class="fab fa-python"></i></div>
+                <!-- TIMELINE CONTENT -->
+                <div class="card timeline-content">
+                    <div class="card-content" style="direction: rtl;text-align: right">
+                        <!-- TIMELINE TITLE -->
+                        <h6 class="timeline-title">برنامه نویسی پایتون</h6>
+                        <!-- TIMELINE TITLE INFO -->
+                        <div class="timeline-info">
+                            <h6>
+                                <small>دانشگاه</small>
+                            </h6>
+                            <h6>
+                                <small>مهر ۹۳ - خرداد ۹۴</small>
+                            </h6>
+                        </div>
+                        <!-- TIMELINE PARAGRAPH -->
+                        <p style="direction: rtl;text-align: right">
+                            اولین زبان برنامه نویسی که یاد گرفتم پایتون بود. پایتون سریع و نسبت به بقیه ی زبان ها آسون تر بود چون همونطور که سازندش هم گفته سعی کردن نزدیک به زبان انسان باشه ...
+                        </p>
+                        <!-- BUTTON TRIGGER MODAL -->
+                        <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-1">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECOND TIMELINE -->
+            <div class="timeline-block">
+                <!-- DOT -->
+                <div class="timeline-dot"><i class="fab fa-java"></i></div>
+                <!-- TIMELINE CONTENT -->
+                <div class="card timeline-content">
+                    <div class="card-content" style="direction: rtl;text-align: right">
+                        <!-- TIMELINE TITLE -->
+                        <h6 class="timeline-title">برنامه نویسی جاوا</h6>
+                        <!-- TIMELINE TITLE INFO -->
+                        <div class="timeline-info">
+                            <h6>
+                                <small>دانشگاه</small>
+                            </h6>
+                            <h6>
+                                <small>مهر ۹۴ - مهر ۹۵</small>
+                            </h6>
+                        </div>
+                        <!-- TIMELINE PARAGRAPH -->
+                        <p style="direction: rtl;text-align: right">
+                            برنامه نویسی برای موبایل واقعا جذاب هست مخصوصا برای سکوی اندروید  برای همین نیاز هست که جاوا بدونید اونجا بود که من رفتم سراغ جاوا ...
+                        </p>
+                        <!-- BUTTON TRIGGER MODAL -->
+                        <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-2">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THIRD TIMELINE -->
+            <div class="timeline-block">
+                <!-- DOT -->
+                <div class="timeline-dot"><i class="fab fa-php"></i></div>
+                <!-- TIMELINE CONTENT -->
+                <div class="card timeline-content">
+                    <div class="card-content" style="direction: rtl;text-align: right">
+                        <!-- TIMELINE TITLE -->
+                        <h6 class="timeline-title">برنامه نویسی PHP</h6>
+                        <!-- TIMELINE TITLE INFO -->
+                        <div class="timeline-info">
+                            <h6>
+                                <small>دانشگاه</small>
+                            </h6>
+                            <h6>
+                                <small>خرداد ۹۶ - اکنون</small>
+                            </h6>
+                        </div>
+                        <!-- TIMELINE PARAGRAPH -->
+                        <p style="direction: rtl;text-align: right">
+                            php زبان مخصوص وب هست و با این که امروزه با بیشتر زبان  ها می شه وب سایت ساخت اما php جایگاه خودش رو
+                            حفظ کرده و با cms ها و فریموک های مختلف و قویی که داره ...
+                        </p>
+
+                        <!-- BUTTON TRIGGER MODAL -->
+                        <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-3">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOURTH TIMELINE -->
+            <div class="timeline-block">
+                <!-- DOT -->
+                <div class="timeline-dot"><i class="fas fa-server"></i></div>
+                <!-- TIMELINE CONTENT -->
+                <div class="card timeline-content">
+                    <div class="card-content" style="direction: rtl;text-align: right">
+                        <!-- TIMELINE TITLE -->
+                        <h6 class="timeline-title"> مدیریت سرور</h6>
+                        <!-- TIMELINE TITLE INFO -->
+                        <div class="timeline-info">
+                            <h6>
+                                <small>دانشگاه </small>
+                            </h6>
+                            <h6>
+                                <small>بهمن ۹۶ - اکنون</small>
+                            </h6>
+                        </div>
+                        <!-- TIMELINE PARAGRAPH -->
+                        <p style="direction: rtl;text-align: right">
+                            آشنایی با docker , مجازی ساز های مطرح مثل vmware , virtualbox , hyperv , ... و آشنایی با linux
+                        </p>
+                        <!-- BUTTON TRIGGER MODAL -->
+                        <a href="#" class="modal-dot" data-toggle="modal" data-target="#myModal-4">
+                            <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="pagination text-align">
-      <div class="btn-group">
-        {% if paginator.previous_page %}
-          {% if paginator.previous_page == 1 %}
-              <a href="{{ site.url }}/" class="btn btn-outline">&laquo;</a>
-          {% else %}
-              <a href="{{ site.url }}/page{{paginator.previous_page}}"  class="btn btn-outline">&laquo;</a>
-          {% endif %}
-        {% else %}
-            <button disabled="disabled" href="javascript:;" class="btn btn-outline">&laquo;</button>
-        {% endif %}
-        {% if paginator.page == 1 %}
-            <a href="javascript:;" class="active btn btn-outline">1</a>
-        {% else %}
-            <a href="{{ site.url }}/"  class="btn btn-outline">1</a>
-        {% endif %}
-        {% for count in (2..paginator.total_pages) %}
-          {% if count == paginator.page %}
-              <a href="javascript:;"  class="active btn btn-outline">{{count}}</a>
-          {% else %}
-              <a href="{{ site.url }}/page{{count}}"  class="btn btn-outline">{{count}}</a>
-          {% endif %}
-        {% endfor %}
-        {% if paginator.next_page %}
-            <a href="{{ site.url }}/page{{paginator.next_page}}"  class="btn btn-outline">&raquo;</a>
-        {% else %}
-            <button disabled="disabled" href="javascript:;" class="btn btn-outline">&raquo;</button>
-        {% endif %}
-        </div>
-    </div>
-    <!-- /pagination -->
 </section>
-<!-- /section.content -->
+
+
+<!--==========================================
+                  MODALS
+===========================================-->
+
+<!--MODAL ONE-->
+<div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-1">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--MODAL HEADER-->
+            <div class="modal-header  text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel-1">برنامه نویسی پایتون</h4>
+                <h6>
+                    <small>مهر ۹۳ - خرداد ۹۴</small>
+                </h6>
+            </div>
+            <!--MODAL BODY-->
+            <div class="modal-body">
+                <p style="direction: rtl; text-align: right">                           اولین زبان برنامه نویسی که یاد گرفتم پایتون بود. پایتون سریع و نسبت به بقیه ی زبان ها آسون تر بود چون همونطور که سازندش هم گفته سعی کردن نزدیک به زبان انسان باشه . در زبان پایتون یک رابط کاربری وجود داره به اسم  tkinter که سعی کردم اون رو یاد بگیرم. و بعد یه مقدار با flask که یک فریمورک برای سایت های پویاست والبته خیلی هم سبک هست کار کردم </p>
+            </div>
+            <!--MODAL FOOTER-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">خروج</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MODAL TWO-->
+<div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--MODAL HEADER-->
+            <div class="modal-header  text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel-2">برنامه نویسی جاوا</h4>
+                <h6>
+                    <small>مهر ۹۴ - مهر ۹۵</small>
+                </h6>
+            </div>
+            <!--MODAL BODY-->
+            <div class="modal-body">
+                <p style="direction: rtl;text-align: right">
+                    برنامه نویسی برای موبایل واقعا جذاب هست مخصوصا برای سکوی اندروید  برای همین نیاز هست که جاوا بدونید اونجا بود که من رفتم سراغ جاوا. دنیای جاوا دنیای زیبایی هست جاوا بسیار ساخت یافته هست و این به نظرم جذابش می کنه و اینکه جاوا برای خیلی کارا مناسب هست. برای کار در وب میشه از spring استفاده کرد.
+                </p>
+            </div>
+            <!--MODAL FOOTER-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">خروج</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MODAL THREE-->
+<div class="modal fade" id="myModal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-3">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--MODAL HEADER-->
+            <div class="modal-header  text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel-3">برنامه نویسی PHP</h4>
+                <h6>
+                    <small>خرداد ۹۶ - اکنون</small>
+                </h6>
+            </div>
+            <!--MODAL BODY-->
+            <div class="modal-body">
+                <p style="direction: rtl;text-align: right">
+                    php زبان مخصوص وب هست و با این که امروزه با بیشتر زبان  ها می شه وب سایت ساخت اما php جایگاه خودش رو
+                    حفظ کرده و با cms ها و فریموک های مختلف و قویی که داره برای توسعه وب می تونه انتخاب خوبی باشه. ومن انتخابش کردم یکی از فریمورک های php , لاراول هستش. لاراول یکی از بهترین فریمورک های وب هست که کارو خیلی آسون کرده من در حال از اون استفاده می کنم.
+                </p>
+            </div>
+            <!--MODAL FOOTER-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">خروج</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MODAL FOUR-->
+<div class="modal fade" id="myModal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-4">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--MODAL HEADER-->
+            <div class="modal-header  text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel-4">مدیریت سرور</h4>
+                <h6>
+                    <small>بهمن ۹۶ - اکنون</small>
+                </h6>
+            </div>
+            <!--MODAL BODY-->
+            <div class="modal-body">
+                <p style="direction: rtl;text-align: right">
+                    آشنایی با docker , مجازی ساز های مطرح مثل vmware , virtualbox , hyperv , ... و آشنایی با linux
+                </p>
+            </div>
+            <!--MODAL FOOTER-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">خروج</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--MODAL FIVE-->
+<div class="modal fade" id="myModal-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-5">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <!--MODAL HEADER-->
+            <div class="modal-header  text-center">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel-5">EXPERIENCE AT M</h4>
+                <h6>
+                    <small>Jan 2014 - Mar 2015</small>
+                </h6>
+            </div>
+            <!--MODAL BODY-->
+            <div class="modal-body">
+                <p>
+                    I have learned a great many things from participating in varsity football.
+                    It has changed my entire outlook on and attitude toward life. Before my
+                    freshman year at [high-school], I was shy, had low self-esteem and turned
+                    away from seemingly impossible challenges. Football has altered all of these
+                    qualities. On the first day of freshman practice, the team warmed up with a
+                    game of touch football. The players were split up and the game began. However,
+                </p>
+            </div>
+            <!--MODAL FOOTER-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--==========================================
+                  PORTFOLIOS
+===========================================-->
+<section id="portfolios" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-archive"></i>نمونه کارها</h4>
+        </div>
+        <div id="portfolios-card" class="row">
+
+            <!--OPTIONS-->
+            <ul class="nav nav-tabs">
+                <!--ALL CATEGORIES-->
+                <li class="active waves-effect list-shuffle"><a id="all-sample" class="active" href="#all" data-toggle="tab">همه</a>
+                    <!--CATEGORIES-->
+                <li class="waves-effect list-shuffle"><a class="cate" href="#a" data-toggle="tab">سامانه حضور و غیاب</a></li>
+                <li class="waves-effect list-shuffle"><a class="cate" href="#b" data-toggle="tab">فروشگاه گلها</a></li>
+                <li class="waves-effect list-shuffle"><a class="cate" href="#c" data-toggle="tab">فروشگاه هنر</a></li>
+            </ul>
+
+            <!--CATEGORIES CONTENT-->
+            <div class="tab-content">
+
+                <!--All CATEGORIES-->
+                <div id="all"></div>
+
+                <!--CATEGORY 1-->
+                <div id="a">
+
+                    <!--CATEGORY CONTENT ONE BIG-->
+                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inLeft">
+                        <figure class="port-effect">
+                            <img src="assets/images/portfolio/p1.png" class="img-responsive" alt="portfolio-demo"/>
+                            <figcaption>
+                                <h2>سامانه حضور و غیاب بزرگمهر</h2>
+                                <p>پنل کارمندان </p>
+                                <a href="assets/images/portfolio/p1.png" class="popup-image" data-effect="mfp-3d-unfold">View
+                                    more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!--CATEGORY CONTENT TWO SMALL-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                        <figure class="port-effect">
+                            <img src="assets/images/portfolio/p3.png" class="img-responsive" alt="portfolio-demo"/>
+                            <figcaption>
+                                <h2>سامانه حضور و غیاب بزرگمهر</h2>
+                                <p>مدیریت دستگاه ها</p>
+                                <a href="assets/images/portfolio/p3.png" class="popup-image" data-effect="mfp-3d-unfold">View
+                                    more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!--CATEGORY CONTENT THREE SMALL-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                        <figure class="port-effect">
+                            <img src="assets/images/portfolio/p4.png" class="img-responsive" alt="portfolio-demo"/>
+                            <figcaption>
+                                <h2>سامانه حضور و غیاب بزرگمهر</h2>
+                                <p>مدیریت کارمندان</p>
+                                <a href="assets/images/portfolio/p4.png" class="popup-image" data-effect="mfp-3d-unfold">View
+                                    more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <!--CATEGORY 2-->
+                <div id="b">
+
+                    <!--CATEGORY CONTENT ONE BIG-->
+                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inRight">
+                        <figure class="port-effect">
+                            <img src="assets/images/portfolio/f1.png" class="img-responsive" alt="portfolio-demo"/>
+                            <figcaption>
+                                <h2>فروشگاه گل ها</h2>
+                                <p>داشبورد مدیر</p>
+                                <a href="assets/images/portfolio/f1.png" class="popup-image" data-effect="mfp-3d-unfold">View
+                                    more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!--CATEGORY CONTENT TWO SMALL-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                        <figure class="port-effect">
+                            <img src="assets/images/portfolio/f3.png" class="img-responsive" alt="portfolio-demo"/>
+                            <figcaption>
+                                <h2>فروشگاه گل ها</h2>
+                                <p>بلاگ</p>
+                                <a href="assets/images/portfolio/f3.png" class="popup-image" data-effect="mfp-3d-unfold">View
+                                    more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+
+                    <!--CATEGORY CONTENT THREE SMALL-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                        <figure class="port-effect">
+                            <img src="assets/images/portfolio/f4.png" class="img-responsive" alt="portfolio-demo"/>
+                            <figcaption>
+                                <h2>فروشگاه گل ها</h2>
+                                <p>صفحه اصلی</p>
+                                <a href="assets/images/portfolio/f4.png" class="popup-image" data-effect="mfp-3d-unfold">View
+                                    more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+                <!--CATEGORY 3-->
+                <div id="c">
+
+
+                    <!--CATEGORY CONTENT ONE BIG-->
+                    <div class="col-md-4 col-sm-12 col-xs-12 grid big inRight">
+                        <figure class="port-effect">
+                            <img src="assets/images/portfolio/a1.png" class="img-responsive" alt="portfolio-demo"/>
+                            <figcaption>
+                                <h2>فروشگاه لوازم هنری</h2>
+                                <p>محصولات</p>
+                                <a href="assets/images/portfolio/a1.png" class="popup-image" data-effect="mfp-3d-unfold">View
+                                    more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                    <!--CATEGORY CONTENT TWO SMALL-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                        <figure class="port-effect">
+                            <img src="assets/images/portfolio/a3.png" class="img-responsive" alt="portfolio-demo"/>
+                            <figcaption>
+                                <h2>فروشگاه لوازم هنری</h2>
+                                <p>لیست اعضا</p>
+                                <a href="assets/images/portfolio/a3.png" class="popup-image" data-effect="mfp-3d-unfold">View
+                                    more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+
+                    <!--CATEGORY CONTENT THREE SMALL-->
+                    <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                        <figure class="port-effect">
+                            <img src="assets/images/portfolio/a2.png" class="img-responsive" alt="portfolio-demo"/>
+                            <figcaption>
+                                <h2>فروشگاه لوازم هنری</h2>
+                                <p>صفحه اصلی</p>
+                                <a href="assets/images/portfolio/a2.png" class="popup-image" data-effect="mfp-3d-unfold">View
+                                    more</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+
+                    <!--                    &lt;!&ndash;CATEGORY CONTENT ONE SMALL&ndash;&gt;
+                                        <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                                            <figure class="port-effect">
+                                                <img src="images/portfolio.png" class="img-responsive" alt="portfolio-demo"/>
+                                                <figcaption>
+                                                    <h2>T-shirt <span>BRAND</span></h2>
+                                                    <p>A brand logo designed by me for Silicon Brand</p>
+                                                    <a href="#">View more</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        &lt;!&ndash;CATEGORY CONTENT TWO SMALL&ndash;&gt;
+                                        <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                                            <figure class="port-effect">
+                                                <img src="images/portfolio.png" class="img-responsive" alt="portfolio-demo"/>
+                                                <figcaption>
+                                                    <h2>Sport <span>WEBSITE</span></h2>
+                                                    <p>Made this for DECo Sports LTD.</p>
+                                                    <a href="#">View more</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        &lt;!&ndash;CATEGORY CONTENT THREE SMALL&ndash;&gt;
+                                        <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                                            <figure class="port-effect">
+                                                <img src="images/portfolio.png" class="img-responsive" alt="portfolio-demo"/>
+                                                <figcaption>
+                                                    <h2>Corporate <span>WEBSITE</span></h2>
+
+                                                    <p>Made this for Lance Corporation UK</p>
+                                                    <a href="#">View more</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+
+                                        &lt;!&ndash;CATEGORY CONTENT FOUR SMALL&ndash;&gt;
+                                        <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                                            <figure class="port-effect">
+                                                <img src="images/portfolio.png" class="img-responsive" alt="portfolio-demo"/>
+                                                <figcaption>
+                                                    <h2>T-shirt <span>BRAND</span></h2>
+                                                    <p>A brand logo designed by me for Silicon Brand</p>
+                                                    <a href="#">View more</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        &lt;!&ndash;CATEGORY CONTENT FIVE SMALL&ndash;&gt;
+                                        <div class="col-md-4 col-sm-6 col-xs-12 grid inRight">
+                                            <figure class="port-effect">
+                                                <img src="images/portfolio.png" class="img-responsive" alt="portfolio-demo"/>
+                                                <figcaption>
+                                                    <h2>Sport <span>WEBSITE</span></h2>
+                                                    <p>Made this for DECo Sports LTD.</p>
+                                                    <a href="#">View more</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        &lt;!&ndash;CATEGORY CONTENT SIX SMALL&ndash;&gt;
+                                        <div class="col-md-4 col-sm-6 col-xs-12 grid inLeft">
+                                            <figure class="port-effect">
+                                                <img src="images/portfolio.png" class="img-responsive" alt="portfolio-demo"/>
+                                                <figcaption>
+                                                    <h2>Corporate <span>WEBSITE</span></h2>
+
+                                                    <p>Made this for Lance Corporation UK</p>
+                                                    <a href="#">View more</a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>-->
+                </div>
+            </div>
+            <!--PORTFOLIOS ADD GALLERY BUTTON-->
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <button id="add-more" class="center-block btn-large waves-effect"><i id="port-add-icon" class="fa fa-plus"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--==========================================
+                   INTEREST
+===========================================-->
+<section id="interest" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-heart"></i>علاقه ها</h4>
+        </div>
+
+        <div id="interest-card" class="card">
+            <!--INTEREST TEXT-->
+            <div class="card-content">
+                <p>
+                    من به کار های زیادی علاقه دارم مثل توی ورزش ها فوتبال رو بیشتر از بقیه دوست دارم و فیلم دیدن هم یه کار روتین در زندگی من هست و کار کردن با فتوشاپ هم دوست دارم
+                </p>
+            </div>
+
+            <!--INTEREST ICONS-->
+            <div class="row no-gutters">
+
+                <!--INTEREST ICON ONE-->
+                <div class="col-md-2 col-sm-4 col-xs-6  box text-center">
+                    <div class="interest-icon">
+                        <i class="fa fa-music"></i>
+                        <span>موسیقی</span>
+                    </div>
+                </div>
+                <!--INTEREST ICON TWO-->
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon-even">
+                        <i class="fa fa-gamepad"></i>
+                        <span>بازی</span>
+                    </div>
+                </div>
+                <!--INTEREST ICON THREE-->
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon">
+                        <i class="fa fa-camera"></i>
+                        <span>فتوشاپ</span>
+                    </div>
+                </div>
+                <!--INTEREST ICON FOUR-->
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon-even">
+                        <i class="fa fa-futbol-o"></i>
+                        <span>فوتبال</span>
+                    </div>
+                </div>
+                <!--INTEREST ICON FIVE-->
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon">
+                        <i class="fa fa-plane"></i>
+                        <span>سفر</span>
+                    </div>
+                </div>
+                <!--INTEREST ICON SIX-->
+                <div class="col-md-2 col-sm-4 col-xs-6 box text-center">
+                    <div class="interest-icon-even">
+                        <i class="fa fa-film"></i>
+                        <span>فیلم</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--
+==========================================
+             TESTIMONIALS AND CLIENTS
+===========================================
+<section id="testimonials" class="section">
+    <div class="container">
+        &lt;!&ndash; SECTION TITLE &ndash;&gt;
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-users"></i>مشتریان</h4>
+        </div>
+        <div id="testimonials-card" class="row card">
+            <div class="col-md-12 col-xs-12">
+                &lt;!&ndash; CLIENTS SLIDER&ndash;&gt;
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    &lt;!&ndash; INDICATORS &ndash;&gt;
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    &lt;!&ndash; WRAPPER FOR SLIDES &ndash;&gt;
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="col-md-12">
+                                &lt;!&ndash;CLIENT IMAGE&ndash;&gt;
+                                <div class="ben center-block">
+                                    <img alt="client-image" class="center-block" src="images/client.png">
+                                </div>
+                                &lt;!&ndash;CLIENT QUOTE&ndash;&gt;
+                                <blockquote>
+                                    I work with John on several web development projects and I find him to be extremely
+                                    creative and a technical Front End Developer. Jone expertise involves building
+                                    complex
+                                    Responsive Design layouts using HTML 5, CSS3, and JavaScript.
+                                    <cite>Mike, CEO, IT World.</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-md-12">
+                                &lt;!&ndash;CLIENT IMAGE&ndash;&gt;
+                                <div class="ben center-block">
+                                    <img alt="client-image" class="center-block" src="images/client.png">
+                                </div>
+                                &lt;!&ndash;CLIENT QUOTE&ndash;&gt;
+                                <blockquote>
+                                    I work with John on several web development projects and I find him to be extremely
+                                    creative and a technical Front End Developer. Jone expertise involves building
+                                    complex
+                                    Responsive Design layouts using HTML 5, CSS3, and JavaScript.
+                                    <cite>Mike, CEO, IT World.</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-md-12">
+                                &lt;!&ndash;CLIENT IMAGE&ndash;&gt;
+                                <div class="ben center-block">
+                                    <img alt="client-image" class="center-block" src="images/client.png">
+                                </div>
+                                &lt;!&ndash;CLIENT QUOTE&ndash;&gt;
+                                <blockquote>
+                                    I work with John on several web development projects and I find him to be extremely
+                                    creative and a technical Front End Developer. Jone expertise involves building
+                                    complex
+                                    Responsive Design layouts using HTML 5, CSS3, and JavaScript.
+                                    <cite>Mike, CEO, IT World.</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="col-md-12">
+                                &lt;!&ndash;CLIENT IMAGE&ndash;&gt;
+                                <div class="ben center-block">
+                                    <img alt="client-image" class="center-block" src="images/client.png">
+                                </div>
+                                &lt;!&ndash;CLIENT QUOTE&ndash;&gt;
+                                <blockquote>
+                                    I work with John on several web development projects and I find him to be extremely
+                                    creative and a technical Front End Developer. Jone expertise involves building
+                                    complex
+                                    Responsive Design layouts using HTML 5, CSS3, and JavaScript.
+                                    <cite>Mike, CEO, IT World.</cite>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="clients">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="clients-wrap">
+                            &lt;!&ndash;CLIENT LOGO'S&ndash;&gt;
+                            <ul id="clients-list" class="clearfix">
+                                <li><img src="images/logo.png" alt="client-logo"></li>
+                                <li><img src="images/logo.png" alt="client-logo"></li>
+                                <li><img src="images/logo.png" alt="client-logo"></li>
+                                <li><img src="images/logo.png" alt="client-logo"></li>
+                                <li><img src="images/logo.png" alt="client-logo"></li>
+                                <li><img src="images/logo.png" alt="client-logo"></li>
+                                <li><img src="images/logo.png" alt="client-logo"></li>
+                                <li><img src="images/logo.png" alt="client-logo"></li>
+                                <li><img src="images/logo.png" alt="client-logo"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>-->
+
+<!--==========================================
+             BLOG
+===========================================-->
+<section id="blog" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-pencil-square"></i>بلاگ</h4>
+        </div>
+        <div id="blog-card" class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="card">
+                    <!--BLOG ODD-->
+                    <div class="blog odd">
+                        <!--IMAGE-->
+                        <div class="image">
+                            <img alt="blog-image" src="assets/images/blog.png"/>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <!--DETAILS-->
+                        <div class="content">
+                            <ol class="breadcrumb">
+                                <li><a href="#">Frontend</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li class="active">Material</li>
+                            </ol>
+                            <h6>Material Design</h6>
+                            <p>
+                                Web design encompasses many different skills and disciplines in the production
+                                of websites.Web design include web graphic design, interface design etc.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <!--BLOG EVEN-->
+                    <div class="blog even">
+                        <!--IMAGE-->
+                        <div class="image">
+                            <img alt="blog-image" src="assets/images/blog.png"/>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <!--DETAILS-->
+                        <div class="content">
+                            <ol class="breadcrumb">
+                                <li><a href="#">Backend</a></li>
+                                <li><a href="#">Dev</a></li>
+                                <li class="active">Shortcuts</li>
+                            </ol>
+                            <h6>Development Shortcut</h6>
+                            <p>
+                                Web development is a broad term for the work involved in developing a web site
+                                for the Internet or an intranet. Now lets get a bit deeper in this topic
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                    <!--BLOG ODD-->
+                    <div class="blog odd">
+                        <!--IMAGE-->
+                        <div class="image">
+                            <img alt="blog-image" src="assets/images/blog.png"/>
+                            <div class="image-overlay"></div>
+                        </div>
+                        <!--DETAILS-->
+                        <div class="content">
+                            <ol class="breadcrumb">
+                                <li><a href="#">Frontend</a></li>
+                                <li><a href="#">Specs</a></li>
+                                <li class="active">UI</li>
+                            </ol>
+                            <h6>A Good UI</h6>
+                            <p>
+                                The user interface (UI), in the industrial design field of human–machine
+                                interaction, is the space where interactions between humans and machines occur.
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--==========================================
+                  CONTACT
+===========================================-->
+<section id="contact" class="section">
+    <div class="container">
+        <!-- SECTION TITLE -->
+        <div class="section-title">
+            <h4 class="text-uppercase text-center"><i class="title-icon fa fa-envelope"></i>ارتباط</h4>
+        </div>
+        <div class="row">
+            <!--
+
+                        <div class="col-md-7 col-sm-12 col-xs-12">
+                            &lt;!&ndash; CONTACT MAP &ndash;&gt;
+                            <div id="map-card" class="card">
+                                &lt;!&ndash; MAP &ndash;&gt;
+                                <div id="myMap"></div>
+                            </div>
+                        </div>
+            -->
+
+            <div id="contact-card" class="col-md-12 col-sm-12 col-xs-12">
+                <!-- CONTACT FORM -->
+                <div class="card">
+                    <div class="card-content">
+                        <form id="contact-form" name="c-form">
+                            <!-- NAME -->
+                            <div class="input-field">
+                                <input id="first_name" type="text" class="validate" name="first_name" required>
+                                <label for="first_name">نام</label>
+                            </div>
+                            <!--SUBJECT-->
+                            <div class="input-field">
+                                <input id="sub" type="text" class="validate" name="sub">
+                                <label for="sub">موضوع</label>
+                            </div>
+                            <!--EMAIL-->
+                            <div class="input-field">
+                                <input id="email" type="email" class="validate" name="email" required>
+                                <label for="email">ایمیل</label>
+                            </div>
+                            <!--MESSAGE-->
+                            <div class="input-field">
+                                <textarea id="textarea1" class="materialize-textarea" name="message"
+                                          required></textarea>
+                                <label for="textarea1">پیام</label>
+                            </div>
+                            <!-- SEND BUTTON -->
+                            <div class="contact-send">
+                                <button id="submit" name="contactSubmit" type="submit" value="Submit"
+                                        class="btn waves-effect">ارسال
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--FORM LOADER-->
+                    <div id="form-loader" class="progress is-hidden">
+                        <div class="indeterminate"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--SCROLL TO TOP-->
+<div id="scroll-top">
+    <divp4.png id="scrollup"><i class="fa fa-angle-up"></i></divp4.png>
+</div>
+
+<!--==========================================
+                      FOOTER
+===========================================-->
+
+<footer>
+
+</footer>
+
+<!-- ================== SCRIPTS ================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.js" integrity="sha256-GMd3rFxMDNnM5JQEpiKLLl8kSrDuG5egqchk758z59g=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script src="assets/javascript/jquery-2.1.3.min.js"></script>
+<script src="assets/javascript/bootstrap.min.js"></script>
+<script src="assets/javascript/materialize.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"></script>
+<script src="assets/javascript/markerwithlabel.min.js"></script>
+<script src="assets/javascript/retina.min.js"></script>
+<script src="assets/javascript/scrollreveal.min.js"></script>
+<script src="assets/javascript/jquery.touchSwipe.min.js"></script>
+<script src="http://trimatrixlab.com/store/flatrica/javascript/vendors/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
+<script src="assets/javascript/custom.js"></script>
+
+<script src="assets/javascript/particles.js"></script>
+<!-- <script src="http://particles/assets/app.js"></script> -->
+
+<script src="assets/javascript/ny.js"></script>
+
+
+</body>
+</html>
