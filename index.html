@@ -1,3 +1,9 @@
+---
+
+comments: false
+
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1225,36 +1231,43 @@
         <div id="blog-card" class="row">
             <div class="col-md-12 col-sm-12">
                 <div class="card">
+                    {% for post in site.posts limit:3 %}
                     <!--BLOG ODD-->
+                    {% if forloop.index0 == 0 %}
                     <div class="blog odd">
+                    {% endif %}
+                    {% if forloop.index0 == 1 %}
+                        <div class="blog even">
+                    {% endif %}
+                            {% if forloop.index0 == 2 %}
+                            <div class="blog odd">
+                                {% endif %}
                         <!--IMAGE-->
                         <div class="image">
-                            <img alt="blog-image" src="assets/images/blog.png"/>
+                            <img alt="blog-image" src="{{ post.image }}"/>
                             <div class="image-overlay"></div>
                         </div>
                         <!--DETAILS-->
-                        <div class="content">
+                        <div class="content" style="text-align: right;direction: rtl">
                             <ol class="breadcrumb">
-                                <li><a href="#">Frontend</a></li>
-                                <li><a href="#">Design</a></li>
-                                <li class="active">Material</li>
+                                <li class="active">{{ post.categories }}</li>
                             </ol>
-                            <h6>Material Design</h6>
+                            <h6><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h6>
                             <p>
-                                Web design encompasses many different skills and disciplines in the production
-                                of websites.Web design include web graphic design, interface design etc.
+                                {{ post.excerpt | strip_html | strip }}
                             </p>
-                            <a href="#">Read More</a>
+                            <a href="{{ site.url }}{{ post.url }}">ادامه</a>
                         </div>
                     </div>
-                    <!--BLOG EVEN-->
+                    {% endfor %}
+<!--                    &lt;!&ndash;BLOG EVEN&ndash;&gt;
                     <div class="blog even">
-                        <!--IMAGE-->
+                        &lt;!&ndash;IMAGE&ndash;&gt;
                         <div class="image">
                             <img alt="blog-image" src="assets/images/blog.png"/>
                             <div class="image-overlay"></div>
                         </div>
-                        <!--DETAILS-->
+                        &lt;!&ndash;DETAILS&ndash;&gt;
                         <div class="content">
                             <ol class="breadcrumb">
                                 <li><a href="#">Backend</a></li>
@@ -1269,14 +1282,14 @@
                             <a href="#">Read More</a>
                         </div>
                     </div>
-                    <!--BLOG ODD-->
+                    &lt;!&ndash;BLOG ODD&ndash;&gt;
                     <div class="blog odd">
-                        <!--IMAGE-->
+                        &lt;!&ndash;IMAGE&ndash;&gt;
                         <div class="image">
                             <img alt="blog-image" src="assets/images/blog.png"/>
                             <div class="image-overlay"></div>
                         </div>
-                        <!--DETAILS-->
+                        &lt;!&ndash;DETAILS&ndash;&gt;
                         <div class="content">
                             <ol class="breadcrumb">
                                 <li><a href="#">Frontend</a></li>
@@ -1290,7 +1303,7 @@
                             </p>
                             <a href="#">Read More</a>
                         </div>
-                    </div>
+                    </div>-->
 
                 </div>
             </div>
