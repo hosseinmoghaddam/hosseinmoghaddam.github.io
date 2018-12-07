@@ -26,9 +26,6 @@ email: hosseinghmoghadam@gmail.com
 #    Navigation    #
 # ---------------- #
 navs:
-  -
-    href: /
-    label: رزومه
 
   -
     href: /home
@@ -53,6 +50,10 @@ navs:
   -
     href: /about/
     label: درباره
+
+  - href: /
+    label: رزومه
+
 
 # ---------------- #
 #       RSS        #
