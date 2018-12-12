@@ -1435,7 +1435,19 @@ comments: false
 <!-- <script src="http://particles/assets/app.js"></script> -->
 
 <script src="assets/javascript/ny.js"></script>
-
-
+<script>
+        // <![CDATA[
+        (function(mt) {
+            var mtscript = document.createElement('script');
+            mtscript.type = 'text/javascript';
+            mtscript.async = true;
+            mtscript.src = ('https:' == document.location.protocol ? 'https://' : 'http://') +
+                            'analytics.monkeytracker.cz/resource/' +
+                            '81b9948d574711fed773340767e0f0cc' +
+                            '/monkeytracker.min.js';
+            var s=document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mtscript, s);
+            })(window.MonkeyTracker = window.MonkeyTracker || {});
+        // ]]>
+</script>
 </body>
 </html>
