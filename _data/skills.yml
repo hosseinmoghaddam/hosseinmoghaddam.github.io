@@ -3,6 +3,8 @@
       - Java
       - C++
       - Python
+      - laravel
+      - jekyll
       - Design Patterns
 
 - name: توسعه تلفن هوشمند
@@ -12,3 +14,6 @@
 - name: ترفند ها
   keywords:
       - Batch Script
+      - git
+      - vagrant
+      - docker

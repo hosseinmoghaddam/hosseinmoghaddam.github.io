@@ -22,7 +22,7 @@ permalink: /donate/
 
 ### از طریق درگاه payping 
 
-![payping](https://os.payping.ir/statics/logo.png)
+![payping](/assets/images/payping_shakhes.jpg)
 آسون تربن راه برای حمایت مالی یه درگاه بانکی آنلاینه که این روزا تعدادشون از انگشتای دست هم بیشتر شده پبشنهاد می کنم اگه تاحالا ازشون استفاده نکردید برای یه بارم که شده زدن دکمه زیر امتحانشون کنید.
 
 [حمایت مالی](https://payping.ir/hosseinmoghadam){: .btn .btn-block}
