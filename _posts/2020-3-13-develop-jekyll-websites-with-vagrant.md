@@ -41,10 +41,10 @@ cd /vagrant/
 ```shell
 jekyll serve --host=0.0.0.0 
 ```
-
 اینم تصوری از اجرای درست jekyll
 
 ![](https://hossein-moghadam.ir/images/blog/devJekwhVag/success.jpg)
+
 آپشن 0.0.0.0=host-- به شما اجازه می ده تا سایت رو روی مرورگر ویندوز خودتون با آدرس زیر  بالا بیارید
  
 ```
