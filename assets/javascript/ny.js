@@ -202,7 +202,7 @@
 
         initVideoPlayAndClose();
 //         initMapsNormal
-         initMapsDark();
+  //       initMapsDark();
 
     });
     // jQuery(window).on('load', function () {
@@ -420,9 +420,9 @@ var partJson = {
 
 var jsonUri = "data:text/plain;base64,"+window.btoa(JSON.stringify(partJson));
  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', jsonUri, function() {
+/* particlesJS.load('particles-js', jsonUri, function() {
   console.log('callback - particles.js config loaded');
-});
+});*/
 
 
 $(function() {  
